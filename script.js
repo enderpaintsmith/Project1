@@ -1,0 +1,1 @@
+console.log("Shortly JavaScript connected!");
