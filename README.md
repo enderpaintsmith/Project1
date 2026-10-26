@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-deployment link: https://coruscating-cajeta-1234b0.netlify.app 
+deployment link: https://project-1-ten-tau-43.vercel.app
 
 For this project, I built a responsive URL shortening application based on the Frontend Mentor Shortly challenge. The goal was to recreate the provided design while developing a functional application that allows users to shorten URLs using the Bitly API.
 
