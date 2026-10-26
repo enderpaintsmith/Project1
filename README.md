@@ -11,7 +11,7 @@ I focused on making the application easy to use, visually consistent, and respon
 
 ## Technologies Used
 
-I used HTML5, CSS3, and JavaScript to build the application. I integrated the Bitly API through Netlify Functions to handle URL shortening requests and keep the API token separate from the frontend code. I also worked with localStorage, Git, GitHub, and Netlify throughout the development process.
+I used HTML5, CSS3, and JavaScript to build the application. I initially integrated the Bitly API through Netlify Functions to handle URL shortening requests and keep the API token separate from the frontend code. I also worked with localStorage, Git, GitHub, and then switched to Vercel for the deployment process.
 
 ## Features and Functionality
 
@@ -27,7 +27,7 @@ I started by organizing the project files and building the HTML structure based 
 
 Once the layout was in place, I moved on to JavaScript functionality, including form validation, event handling, DOM manipulation, and displaying shortened links.
 
-The next step was integrating the Bitly API. I used a Netlify serverless function to handle requests rather than exposing the API token directly in the browser.
+The next step was integrating the Bitly API. I used a Netlify serverless function to handle requests rather than exposing the API token directly in the browser. I then switched to Vercel because I was unable to upload JS files and others to Netlify.
 
 ## Challenges and What I Learned
 
@@ -47,7 +47,7 @@ The application requires a valid Bitly API token to generate shortened URLs.
 
 ## Future Improvements
 
-With more time, I would like to continue improving the application's functionality and overall user experience. This could include better feedback during API requests, additional options for managing saved links, and further improvements to the code structure.
+With more time, I would like to continue improving the application's functionality and overall user experience. This could include better feedback during API requests, animations, additional options for managing saved links, and further improvements to the code structure.
 
 ## Acknowledgments
 
