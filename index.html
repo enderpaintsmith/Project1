@@ -1,96 +1,201 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <title>Shortly | URL Shortener</title>
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
-
 <body>
 
-  Features
-  Pricing
-  Resources
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" alt="Shortly">
+      </a>
 
-  Login
-  Sign Up
+      <button class="menu-toggle" type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        ☰
+      </button>
 
-  More than just shorter links
+      <div class="nav-links" id="nav-links">
+        <div class="nav-left">
+          <a href="#features">Features</a>
+          <a href="#shortener">Pricing</a>
+          <a href="#footer">Resources</a>
+        </div>
 
-  Build your brand’s recognition and get detailed insights
-  on how your links are performing.
+        <div class="nav-right">
+          <a href="#shortener">Login</a>
+          <a href="#shortener" class="btn">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  Get Started
+  <main>
 
-  Shorten a link here...
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>More than just shorter links</h1>
+        <p>
+          Build your brand's recognition and get detailed
+          insights on how your links are performing.
+        </p>
+        <a href="#shortener" class="btn">Get Started</a>
+      </div>
 
-  Shorten It!
+      <div class="hero-image">
+        <img src="./images/illustration-working.svg"
+          alt="Person working at a desk">
+      </div>
+    </section>
 
-  Advanced Statistics
+    <!-- Shortener and Statistics -->
+    <section class="statistics" id="features">
 
-  Track how your links are performing across the web with our
-  advanced statistics dashboard.
+      <div class="shortener" id="shortener">
+        <form id="shorten-form" novalidate>
+          <div class="input-group">
+            <label for="url-input" class="sr-only">
+              Enter a URL to shorten
+            </label>
+            <input
+              type="url"
+              id="url-input"
+              placeholder="Shorten a link here..."
+              required
+            >
+            <p class="error-message" id="error-message"
+              aria-live="polite"></p>
+          </div>
 
-  Brand Recognition
+          <button type="submit" class="btn">
+            Shorten It!
+          </button>
+        </form>
+      </div>
 
-  Boost your brand recognition with each click. Generic links don’t
-  mean a thing. Branded links help instil confidence in your content.
+      <div id="results" class="results"
+        aria-live="polite"></div>
 
-  Detailed Records
+      <div class="statistics-heading">
+        <h2>Advanced Statistics</h2>
+        <p>
+          Track how your links are performing across the web
+          with our advanced statistics dashboard.
+        </p>
+      </div>
 
-  Gain insights into who is clicking your links. Knowing when and where
-  people engage with your content helps inform better decisions.
+      <div class="feature-cards">
 
-  Fully Customizable
+        <article class="feature-card">
+          <div class="feature-icon">
+            <img src="./images/icon-brand-recognition.svg"
+              alt="">
+          </div>
+          <h3>Brand Recognition</h3>
+          <p>
+            Boost your brand recognition with each click.
+            Generic links don't mean a thing. Branded links
+            help instill confidence in your content.
+          </p>
+        </article>
 
-  Improve brand awareness and content discoverability through customizable
-  links, supercharging audience engagement.
+        <article class="feature-card">
+          <div class="feature-icon">
+            <img src="./images/icon-detailed-records.svg"
+              alt="">
+          </div>
+          <h3>Detailed Records</h3>
+          <p>
+            Gain insights into who is clicking your links.
+            Knowing when and where people engage with your
+            content helps inform better decisions.
+          </p>
+        </article>
 
-  Boost your links today
+        <article class="feature-card">
+          <div class="feature-icon">
+            <img src="./images/icon-fully-customizable.svg"
+              alt="">
+          </div>
+          <h3>Fully Customizable</h3>
+          <p>
+            Improve brand awareness and content discoverability
+            through customizable links, supercharging audience
+            engagement.
+          </p>
+        </article>
 
-  Get Started
+      </div>
+    </section>
 
-  Features
+    <!-- Call to Action -->
+    <section class="boost">
+      <h2>Boost your links today</h2>
+      <a href="#shortener" class="btn">Get Started</a>
+    </section>
 
-  Link Shortening
-  Branded Links
-  Analytics
+  </main>
 
-  Resources
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-content">
 
-  Blog
-  Developers
-  Support
+      <a href="#" class="footer-logo">
+        <img src="./images/logo.svg" alt="Shortly">
+      </a>
 
-  Company
+      <div class="footer-links">
+        <div>
+          <h3>Features</h3>
+          <a href="#shortener">Link Shortening</a>
+          <a href="#features">Branded Links</a>
+          <a href="#features">Analytics</a>
+        </div>
 
-  About
-  Our Team
-  Careers
-  Contact
+        <div>
+          <h3>Resources</h3>
+          <a href="#footer">Blog</a>
+          <a href="#footer">Developers</a>
+          <a href="#footer">Support</a>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-<script src="./script.js"></script>
+        <div>
+          <h3>Company</h3>
+          <a href="#footer">About</a>
+          <a href="#footer">Our Team</a>
+          <a href="#footer">Careers</a>
+          <a href="#footer">Contact</a>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://facebook.com" aria-label="Facebook">
+          <img src="./images/icon-facebook.svg" alt="">
+        </a>
+        <a href="https://x.com" aria-label="X">
+          <img src="./images/icon-twitter.svg" alt="">
+        </a>
+        <a href="https://pinterest.com" aria-label="Pinterest">
+          <img src="./images/icon-pinterest.svg" alt="">
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram">
+          <img src="./images/icon-instagram.svg" alt="">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
-
 </html>
